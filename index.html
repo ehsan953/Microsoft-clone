@@ -3,58 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="input.css" />
     <link rel="icon" href="images/microsoft-icon.png" />
     <title id="pageTitle">Microsoft – Cloud, Computers, Apps & Gaming</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="input.css" />
   </head>
   <body class="">
-    <div class="navbar flex items-center justify-between p-2 bg-white">
-      <div class="flex items-center justify-center md:order-2">
-        <div class="toggle p-4 inline-block cursor-pointer md:hidden">
+    <div class="navbar flex items-center justify-between p-2 md:px-6 bg-white">
+      <div class="flex items-center justify-center space-x-2 md:order-2">
+        <div class="toggle p-2 inline-block cursor-pointer md:hidden">
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
         </div>
-        <div class="search md:hidden">Search</div>
+        <div class="search md:hidden">
+          <i class="fa-solid fa-magnifying-glass text-xl"></i>
+        </div>
       </div>
-      <div class="logo flex text-center md:order-1">
+      <div class="logo flex items-center text-center md:order-1">
         <div class="mr-2">
           <img
             src="images/microsoft_PNG10.png.crdownload"
-            class="w-24"
+            class="w-24 lg:w-36"
             alt=""
           />
         </div>
         <div class="">
           <div
-            class="features w-fit md:w-auto absolute bg-gray-200 md:bg-white md:static md:flex md:mx-4 inset-0 md:space-x-2 -translate-x-96 md:translate-x-0"
+            class="features w-fit md:text-sm md:w-auto absolute bg-gray-200 md:bg-white md:static md:flex md:space-x-5 md:mx-4 inset-0 -translate-x-96 md:translate-x-0"
           >
             <div class="">Microsoft 365</div>
-            <div class="">Team</div>
+            <div class="">Teams</div>
             <div class="">Copilot</div>
             <div class="">Windows</div>
             <div class="">Surface</div>
-            <div class="">More</div>
+            <div class="lg:block xl:hidden">
+              More
+              <i class="fa-solid fa-angle-down text-xs"></i>
+            </div>
+            <div class="flex flex-col lg:flex-row lg:space-x-5">
+              <div class="hidden xl:block">Xbox</div>
+              <div class="hidden xl:block">Deals</div>
+              <div class="hidden xl:block">Small business</div>
+              <div class="hidden xl:block">Support</div>
+            </div>
           </div>
         </div>
       </div>
       <div class="cart flex text-center md:order-3">
-        <div class="search hidden md:block mr-2">All Microsoft Search</div>
-        <div>Cart account</div>
+        <div
+          class="search hidden lg:flex lg:mr-5 lg:space-x-1 items-center text-sm mr-2"
+        >
+          <div class="">All Microsoft</div>
+          <i class="fa-solid fa-angle-down text-xs"></i>
+        </div>
+        <div class="account flex space-x-5 items-center">
+          <div>
+            <i class="fa-solid fa-magnifying-glass hidden md:block text-xl"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-cart-shopping text-xl"></i>
+          </div>
+          <div>
+            <i class="fa-regular fa-circle-user text-xl"></i>
+          </div>
+        </div>
       </div>
     </div>
     <div
-      class="slider bg-gray-100 mx-2 flex flex-col-reverse md:flex-row pb-2 md:items-center"
+      class="slider lg:bg-[#f6f5f1] mx-2 flex flex-col-reverse lg:flex-row pb-2 lg:items-center"
     >
       <div
-        class="left bg-white flex flex-col md:bg-gray-100 py-3 md:pl-4 md:items-baseline"
+        class="left flex flex-col py-3 px-4 shadow-md lg:shadow-none lg:pl-4 lg:items-baseline"
       >
-        <h1 class="font-bold text-2xl">Up to $500 off Surface Pro 9</h1>
-        <p class="my-1 w-3/4 md:text-base">
+        <h1 class="font-medium text-2xl py-2">Up to $500 off Surface Pro 9</h1>
+        <p class="w-3/4 lg:text-base">
           Laptop power, tablet flexibility—save now on select devices and unwrap
           possibility all year long. Offer ends 12/24.
         </p>
-        <button class="bg-black text-white w-fit py-2 px-4 my-2">
+        <button
+          class="bg-black font-medium rounded-sm text-white w-fit py-2 px-4 my-6"
+        >
           Shop Surface Pro 9
         </button>
       </div>
@@ -62,8 +92,114 @@
         <img
           src="images/Highlight-Surface-Pro-9-Platinum-FY24HOL_VP2-859x540.avif"
           alt=""
-          w
+          style="width: 64rem"
         />
+      </div>
+    </div>
+    <div class="promo mx-2 p-4 md:p-2">
+      <ul class="flex items-center justify-center flex-wrap">
+        <li
+          class="flex flex-col items-center my-4 px-2 mx-2 md:basis-1/4 lg:basis-1/5 md:mx-0 lg:px-0"
+        >
+          <img src="images/promo-icon1.svg" alt="" class="w-10 mb-2" />
+          <a href="#" class="font-medium underline cursor-pointer"
+            >Shop Surface devices</a
+          >
+        </li>
+        <li
+          class="flex flex-col items-center my-4 px-2 mx-2 md:basis-1/4 lg:basis-1/5 md:mx-0 lg:px-0"
+        >
+          <img src="images/promo-icon2.svg" alt="" class="w-10 mb-2" />
+          <a href="#" class="font-medium underline cursor-pointer"
+            >Shop Xbox games</a
+          >
+        </li>
+        <li
+          class="flex flex-col items-center my-4 px-2 mx-2 md:basis-1/4 lg:basis-1/5 md:mx-0 lg:px-0"
+        >
+          <img src="images/promo-icon3.svg" alt="" class="w-10 mb-2" />
+          <a href="#" class="font-medium underline cursor-pointer"
+            >Shop for accessories</a
+          >
+        </li>
+        <li
+          class="flex flex-col items-center my-4 px-2 mx-2 md:basis-1/4 lg:basis-1/5 md:mx-0 lg:px-0"
+        >
+          <img src="images/promo-icon4.svg" alt="" class="w-10 mb-2" />
+          <a href="#" class="font-medium underline cursor-pointer"
+            >Shop for your business</a
+          >
+        </li>
+        <li
+          class="flex flex-col items-center my-4 px-2 mx-2 md:basis-2/4 lg:basis-1/5 md:mx-0 lg:px-0"
+        >
+          <img src="images/promo-icon5.svg" alt="" class="w-10 mb-2" />
+          <a href="#" class="font-medium underline cursor-pointer"
+            >Choose your Microsoft 365</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="cards flex flex-col md:flex-row p-4">
+      <div class="p-4 basis-full md:basis-2/4 mx-auto">
+        <img src="images/product-img1.avif" alt="" />
+        <div class="my-2">
+          <span class="bg-pink-900 text-white px-4 py-2">Countdown Sale</span>
+        </div>
+        <h1 class="font-medium text-2xl py-2">
+          Save up to $500 on Surface Pro 9
+        </h1>
+        <p>
+          Don’t delay—save now on the tablet flexibility you want and the laptop
+          performance you need, all in one ultra-portable device. Offer ends
+          12/24.
+        </p>
+        <a href="#">Shop Surface Pro 9</a>
+      </div>
+      <div class="p-4 basis-full md:basis-2/4 mx-auto">
+        <img src="images/product-img2.jpeg" alt="" />
+        <div class="my-2">
+          <span class="bg-pink-900 text-white px-4 py-2">Countdown Sale</span>
+        </div>
+        <h1 class="font-medium text-2xl py-2">
+          Save up to $500 on Surface Laptop Studio 2
+        </h1>
+        <p>
+          Don’t delay—save now on the tablet flexibility you want and the laptop
+          performance you need, all in one ultra-portable device. Offer ends
+          12/24.
+        </p>
+        <a href="#">Shop Surface Pro 9</a>
+      </div>
+      <div class="p-4 basis-full md:basis-2/4 mx-auto">
+        <img src="images/product-img3.avif" alt="" />
+        <div class="my-2">
+          <span class="bg-pink-900 text-white px-4 py-2">Countdown Sale</span>
+        </div>
+        <h1 class="font-medium text-2xl py-2">
+          Save up to $60 on Xbox Series S
+        </h1>
+        <p>
+          Don’t delay—save now on the tablet flexibility you want and the laptop
+          performance you need, all in one ultra-portable device. Offer ends
+          12/24.
+        </p>
+        <a href="#">Shop Surface Pro 9</a>
+      </div>
+      <div class="p-4 basis-full md:basis-2/4 mx-auto">
+        <img src="images/product-img4.avif" alt="" />
+        <div class="my-2">
+          <span class="bg-pink-900 text-white px-4 py-2">Countdown Sale</span>
+        </div>
+        <h1 class="font-medium text-2xl py-2">
+          Up to $44 off Xbox Wireless Controller
+        </h1>
+        <p>
+          Don’t delay—save now on the tablet flexibility you want and the laptop
+          performance you need, all in one ultra-portable device. Offer ends
+          12/24.
+        </p>
+        <a href="#">Shop Surface Pro 9</a>
       </div>
     </div>
   </body>
