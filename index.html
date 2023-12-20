@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="logo flex items-center text-center md:order-1">
-        <div class="mr-2">
+        <div class="mr-2 cursor-pointer">
           <img
             src="images/microsoft_PNG10.png.crdownload"
             class="w-24 lg:w-28"
@@ -35,20 +35,29 @@
           <div
             class="features w-fit md:text-sm md:w-auto absolute bg-gray-200 md:bg-white md:static md:flex md:space-x-5 md:mx-4 inset-0 -translate-x-96 md:translate-x-0"
           >
-            <div class="">Microsoft 365</div>
-            <div class="">Teams</div>
-            <div class="">Copilot</div>
-            <div class="">Windows</div>
-            <div class="">Surface</div>
-            <div class="lg:block xl:hidden">
-              More
-              <i class="fa-solid fa-angle-down text-xs"></i>
+            <div class="cursor-pointer hover:underline">Microsoft 365</div>
+            <div class="cursor-pointer hover:underline">Teams</div>
+            <div class="cursor-pointer hover:underline">Copilot</div>
+            <div class="cursor-pointer hover:underline">Windows</div>
+            <div class="cursor-pointer hover:underline">Surface</div>
+            <div class="lg:block xl:hidden cursor-pointer hover:underline">
+              More<i
+                class="fa-solid fa-angle-down text-xs cursor-pointer ml-1"
+              ></i>
             </div>
             <div class="flex flex-col lg:flex-row lg:space-x-5">
-              <div class="hidden xl:block">Xbox</div>
-              <div class="hidden xl:block">Deals</div>
-              <div class="hidden xl:block">Small business</div>
-              <div class="hidden xl:block">Support</div>
+              <div class="hidden xl:block cursor-pointer hover:underline">
+                Xbox
+              </div>
+              <div class="hidden xl:block cursor-pointer hover:underline">
+                Deals
+              </div>
+              <div class="hidden xl:block cursor-pointer hover:underline">
+                Small business
+              </div>
+              <div class="hidden xl:block cursor-pointer hover:underline">
+                Support
+              </div>
             </div>
           </div>
         </div>
@@ -57,8 +66,8 @@
         <div
           class="search hidden lg:flex lg:mr-5 lg:space-x-1 items-center text-sm mr-2"
         >
-          <div class="">All Microsoft</div>
-          <i class="fa-solid fa-angle-down text-xs"></i>
+          <div class="cursor-pointer hover:underline">All Microsoft</div>
+          <i class="fa-solid fa-angle-down text-xs cursor-pointer"></i>
         </div>
         <div class="account flex space-x-5 items-center">
           <div>
@@ -75,9 +84,9 @@
     </div>
 
     <div
-      class="header flex items-center justify-center hover:underline px-6 py-2 bg-[#6B0E34] text-white"
+      class="header flex items-center justify-center cursor-pointer px-6 py-2 bg-[#6B0E34] text-white"
     >
-      <p class="font-[600]">
+      <p class="font-[600] hover:underline">
         <a href="#">
           Order gifts by 11:00 AM PT on 12/22 to get them by 12/24. Shop Holiday
           gifts
@@ -88,7 +97,9 @@
       ></span>
     </div>
 
-    <div class="lg:pt-16 lg:bg-[#f6f5f1] 2xl:container 2xl:mx-auto">
+    <div
+      class="lg:pt-16 lg:bg-[#f6f5f1] 2xl:container 2xl:mx-auto cursor-pointer"
+    >
       <div
         class="slider lg:mx-auto lg:pl-[5%] lg:bg-[#f6f5f1] mx-2 flex flex-col-reverse lg:flex-row pb-2 lg:items-center lg:justify-center"
       >
@@ -120,7 +131,9 @@
         </div>
       </div>
     </div>
-    <div class="promo mx-2 p-4 md:p-2 xl:container xl:mx-auto xl:px-16">
+    <div
+      class="promo mx-2 p-4 md:p-2 cursor-pointer xl:container xl:mx-auto xl:px-16"
+    >
       <ul
         class="flex items-center justify-center flex-wrap 2xl:container 2xl:px-36"
       >
@@ -167,7 +180,7 @@
       </ul>
     </div>
     <div
-      class="cards flex flex-wrap flex-col sm:flex-row lg:px-14 2xl:container 2xl:mx-auto 2xl:px-28 p-4"
+      class="cards my-3 flex flex-wrap flex-col cursor-pointer sm:flex-row lg:px-14 2xl:container 2xl:mx-auto 2xl:px-28"
     >
       <div class="p-4 basis-full sm:basis-1/2 lg:basis-1/4 mx-auto">
         <img src="images/product-img1.avif" class="w-full my-4" alt="" />
@@ -250,35 +263,160 @@
       </div>
     </div>
 
-    <div class="lg:px-14 2xl:container 2xl:mx-auto">
+    <div
+      class="lg:mx-auto my-12 py-12 cursor-pointer md:mb-24 lg:my-10 lg:flex lg:justify-center 2xl:container 2xl:mx-auto 2xl:px-28"
+    >
       <div
-        class="slider lg:mx-auto lg:pl-[5%] lg:bg-[#274d56] mx-2 flex flex-col-reverse lg:flex-row pb-2 lg:items-center lg:justify-center"
+        class="slider sm:relative lg:relative mx-2 flex flex-col-reverse pb-2 lg:items-center"
       >
         <div
-          class="left flex flex-col py-3 px-4 shadow-md lg:shadow-none lg:text-white lg:p-12 lg:items-baseline"
+          class="left bg-white mx-2 py-3 px-4 md:shadow-md md:absolute md:-bottom-48 md:w-[98%] lg:h-96 lg:py-4 lg:bg-transparent lg:shadow-none lg:top-36 lg:left-16 2xl:top-28 2xl:left-10 lg:w-1/2 lg:text-white lg:pl-12 lg:pr-32 xl:px-20 xl:py-12 xl:left-16 2xl:px-10"
         >
           <span
-            class="text-[#6B0E34] lg:text-white lg:bg-[#6B0E34] font-medium 2xl:text-xl"
+            class="text-[#6B0E34] lg:text-white lg:px-3 lg:py-0.5 lg:bg-[#6B0E34] font-medium 2xl:text-xl"
             >Countdown Sale</span
           >
           <h1 class="font-medium text-2xl py-2 lg:text-3xl 2xl:text-4xl">
-            Up to $500 off Surface Pro 9
+            Up to 50% off accessories
           </h1>
           <p class="w-3/4 lg:text-base 2xl:text-xl">
-            Laptop power, tablet flexibility—save now on select devices and
-            unwrap possibility all year long. Offer ends 12/24.
+            Score next-level deals on select Surface and Microsoft accessories,
+            including keyboards, docks, and more. Offer ends 1/2.
           </p>
           <button
-            class="bg-black font-medium rounded-sm text-white w-fit py-2 px-4 my-6"
+            class="bg-black font-medium rounded-sm text-white w-fit py-2 px-4 my-6 lg:text-black lg:bg-white"
           >
             Shop Surface Pro 9
           </button>
         </div>
-        <div class="right">
+        <div class="right lg:hidden">
           <img
             src="images/Highlight-Countdown-Key-Art-FY24HOLCD_VP2-859x540.avif"
             alt=""
             style="width: 64rem"
+            class=""
+          />
+        </div>
+        <div class="right hidden lg:block">
+          <img
+            src="images/Highlight-Countdown.avif"
+            alt=""
+            style="height: 35rem"
+            class="lg:w-[90%] 2xl:w-[100%] mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col cursor-pointer md:mt-40 md:py-24 lg:mt-0 lg:py-0">
+      <div class="px-4 py-0 lg:px-14 2xl:container 2xl:mx-auto 2xl:px-28">
+        <h1 class="font-medium text-3xl sm:px-4">For Business</h1>
+      </div>
+      <div
+        class="cards flex flex-wrap flex-col sm:flex-row lg:px-14 2xl:container 2xl:mx-auto 2xl:px-28 px-4 py-0"
+      >
+        <div class="sm:p-4 basis-full sm:basis-1/2 lg:basis-1/4 mx-auto">
+          <img src="images/product-img5.avif" class="w-full" alt="" />
+
+          <h1 class="font-medium text-2xl py-2">
+            Save up to $350 on Surface Laptop 5 for Business
+          </h1>
+          <p>
+            Lightning-fast performance, built-in security and sleek portability
+            designed for your small business. Offer ends 12/20.
+          </p>
+
+          <p class="my-5 text-[#6B0E34] font-[600]">
+            <a href="#" class=""
+              >Shop now <span><i class="fa-solid fa-angle-right"></i></span
+            ></a>
+          </p>
+        </div>
+        <div class="sm:p-4 basis-full sm:basis-1/2 lg:basis-1/4 mx-auto">
+          <img src="images/product-img6.avif" class="w-full" alt="" />
+
+          <h1 class="font-medium text-2xl py-2">
+            15% off Microsoft 365 Business Standard
+          </h1>
+          <p>
+            Enjoy limited-time savings this holiday season on Microsoft 365 and
+            build your business with ease, efficiency, and security.
+          </p>
+          <p class="my-5 text-[#6B0E34] font-[600]">
+            <a href="#" class=""
+              >Shop Microsoft 365 Business Standard
+              <span><i class="fa-solid fa-angle-right"></i></span
+            ></a>
+          </p>
+        </div>
+        <div class="sm:p-4 basis-full sm:basis-1/2 lg:basis-1/4 mx-auto">
+          <img src="images/product-img7.jpeg" class="w-full" alt="" />
+
+          <h1 class="font-medium text-2xl py-2">Windows 11 for business</h1>
+          <p>
+            Designed for hybrid work. Powerful for employees. Consistent for IT.
+            Secure for all.
+          </p>
+          <p class="my-5 text-[#6B0E34] font-[600]">
+            <a href="#" class=""
+              >Learn more <span><i class="fa-solid fa-angle-right"></i></span
+            ></a>
+          </p>
+        </div>
+        <div class="sm:p-4 basis-full sm:basis-1/2 lg:basis-1/4 mx-auto">
+          <img src="images/product-img8.webp" class="w-full" alt="" />
+
+          <h1 class="font-medium text-2xl py-2">
+            Get Microsoft Teams for free
+          </h1>
+          <p>
+            Online meetings, chat, and shared cloud storage—all in one place.
+          </p>
+          <p class="my-5 text-[#6B0E34] font-[600]">
+            <a href="#" class=""
+              >Sign up for free
+              <span><i class="fa-solid fa-angle-right"></i></span
+            ></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="lg:mx-auto cursor-pointer my-12 py-12 md:mb-24 lg:my-10 lg:flex lg:justify-center 2xl:container 2xl:mx-auto 2xl:px-28"
+    >
+      <div
+        class="slider sm:relative lg:relative mx-2 flex flex-col-reverse pb-2 lg:items-center"
+      >
+        <div
+          class="left bg-white mx-2 lg:mx-0 py-3 px-4 md:shadow-md md:absolute md:-bottom-48 md:w-[98%] lg:h-[26rem] lg:p-10 lg:bg-white lg:shadow-none lg:top-20 lg:left-[65%] lg:w-[27%]"
+        >
+          <h1 class="font-medium text-2xl py-2 lg:text-3xl">
+            Cybersecurity training for everyone
+          </h1>
+          <p class="lg:text-base">
+            KC7, a free educational program that serves students of diverse
+            backgrounds, is creating an accessible, gamified approach to
+            cybersecurity training.
+          </p>
+          <button
+            class="bg-black font-medium rounded-sm text-white w-fit py-2 px-4 my-6"
+          >
+            Learn about KC7
+          </button>
+        </div>
+        <div class="right lg:hidden">
+          <img
+            src="images/slider2-img-sm.avif"
+            alt=""
+            style="width: 64rem"
+            class=""
+          />
+        </div>
+        <div class="right hidden lg:block">
+          <img
+            src="images/slider2-img.avif"
+            alt=""
+            style="height: 35rem"
+            class="lg:w-[90%] xl:w-full mx-auto"
           />
         </div>
       </div>
